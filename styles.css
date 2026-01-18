@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h2{
+  color:chocolate !important;  
+}
+
+h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Slide-up Animation */
+.slide-up {
+  animation: slideUp 1s ease-out forwards;
+}
+
+/* Bounce Animation for Buttons */
+.bounce {
+  display: inline-block;
+  animation: bounce 1s infinite alternate;
+}
+
+
+/* Header and Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.logo h1 {
+  font-size: 32px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 17.6px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 0 ;
+  color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+}
+
+.hero-text p {
+  font-size: 20.8px;
+  margin: 10px 0;
+}
+
+.cta-btn {
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17.6px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  text-decoration: none;
+
+}
+
+.cta-btn:hover {
+  background: #e67e22;
+}
+
+/* Menu Section */
+
+#menu {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 40px;  /* Increased font size for the heading */
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Keeps 3 equal columns */
+  gap: 30px; /* Increased space between items */
+  justify-items: center; /* Centers the items in each grid cell */
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px; /* Increased padding for larger menu items */
+  text-align: center;
+  width: 100%; /* Ensures the items stretch within their grid cell */
+  max-width: 350px; /* Increased max width of the menu items */
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px; /* Increased height of the images */
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-size: 28.8px;  /* Increased font size for item title */
+  margin-top: 20px;
+}
+
+/* Styling for the 'And Much More' section */
+.much-more {
+  grid-column: span 3; /* Makes this item span across all 3 columns */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px; /* Reduced padding to make it smaller */
+}
+
+.much-more h3 {
+  font-size: 28.8px; /* Decreased font size for 'And Much More' */
+  color: #777;
+  font-weight: bold;
+  margin-top: 0; /* Remove extra space at the top */
+}
+
+/* About Section */
+#about {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#about h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 17.6px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Review Section */
+#review {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#review h3 {
+  font-size: 32px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17.6;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Button Styling */
+.cta-btn, .menu-item button, form button {
+  background: #f39c12; /* Solid background */
+  color: white;
+  padding: 12px 25px; /* Padding for better click area */
+  font-size: 19.2px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.cta-btn:hover, .menu-item button:hover, form button:hover {
+  background: #e67e22; /* Change to darker shade on hover */
+}
+
+.cta-btn:active, .menu-item button:active, form button:active {
+  background: #d35400; /* Darker color when clicked */
+}
+
+.carousel-inner img {
+  border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
+}
+
+#gallery {
+  padding: 0;
+  margin: auto;
+  height: vh;
+}
+
+.solid-bg {
+  background: #3d3b3b;
+  margin: 0;
+  padding: 0.1px;
+  
+}
